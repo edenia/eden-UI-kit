@@ -12,7 +12,9 @@ const AvatarGeneralInfo = ({
   return (
     <div className="avatar-info-center-content">
       <div className="avatar-info-container">
-        {position && <span className="avatar-info-position">{position}</span>}
+        {position && (
+          <span className="body1 avatar-info-position-text">{position}</span>
+        )}
         {name && (
           <span
             className="avatar-info-name"

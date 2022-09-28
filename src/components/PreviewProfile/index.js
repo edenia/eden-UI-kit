@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Avatar from "../Avatar";
 import AvatarGeneralInfo from "../AvatarGeneralInfo";
@@ -29,6 +30,18 @@ const PreviewProfile = ({
       />
     </div>
   );
+};
+
+PreviewProfile.propTypes = {
+  icon: PropTypes.string,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  bgColor: PropTypes.string,
+  position: PropTypes.string,
+  nameSize: PropTypes.string,
+  nameColor: PropTypes.string,
+  selectableItems: PropTypes.node,
+  nameFontWeight: PropTypes.number,
 };
 
 export default PreviewProfile;

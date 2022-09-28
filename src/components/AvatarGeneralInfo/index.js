@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const AvatarGeneralInfo = ({
-  position,
   name,
   nameSize,
+  position,
   nameColor,
   nameFontWeight,
   selectableItems,
@@ -28,6 +29,15 @@ const AvatarGeneralInfo = ({
       </div>
     </div>
   );
+};
+
+AvatarGeneralInfo.propTypes = {
+  name: PropTypes.string,
+  position: PropTypes.string,
+  nameSize: PropTypes.string,
+  nameColor: PropTypes.string,
+  selectableItems: PropTypes.node,
+  nameFontWeight: PropTypes.number,
 };
 
 export default AvatarGeneralInfo;

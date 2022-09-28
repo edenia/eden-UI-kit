@@ -9,7 +9,7 @@ const PreviewProfile = ({
   name,
   image,
   bgColor,
-  position,
+  positionText,
   nameSize,
   nameColor,
   nameFontWeight,
@@ -22,7 +22,7 @@ const PreviewProfile = ({
       </div>
       <AvatarGeneralInfo
         name={name}
-        position={position}
+        positionText={positionText}
         nameSize={nameSize}
         nameColor={nameColor}
         nameFontWeight={nameFontWeight}
@@ -37,7 +37,7 @@ PreviewProfile.propTypes = {
   name: PropTypes.string,
   image: PropTypes.string,
   bgColor: PropTypes.string,
-  position: PropTypes.string,
+  positionText: PropTypes.string,
   nameSize: PropTypes.string,
   nameColor: PropTypes.string,
   selectableItems: PropTypes.node,

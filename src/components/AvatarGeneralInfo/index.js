@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const AvatarGeneralInfo = ({
   name,
   nameSize,
-  position,
+  positionText,
   nameColor,
   nameFontWeight,
   selectableItems,
@@ -12,8 +12,10 @@ const AvatarGeneralInfo = ({
   return (
     <div className="avatar-info-center-content">
       <div className="avatar-info-container">
-        {position && (
-          <span className="body1 avatar-info-position-text">{position}</span>
+        {positionText && (
+          <span className="body1 avatar-info-position-text">
+            {positionText}
+          </span>
         )}
         {name && (
           <span
@@ -35,7 +37,7 @@ const AvatarGeneralInfo = ({
 
 AvatarGeneralInfo.propTypes = {
   name: PropTypes.string,
-  position: PropTypes.string,
+  positionText: PropTypes.string,
   nameSize: PropTypes.string,
   nameColor: PropTypes.string,
   selectableItems: PropTypes.node,

@@ -4,6 +4,11 @@
   padding: 10px 12px;
   color: #fff;
   border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
   background-color: #2563eb;
   cursor: pointer;
   transition-duration: 1s;
@@ -20,6 +25,11 @@
   text-transform: uppercase;
   background-color: #2563eb;
   border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
   box-shadow: 0px 2px 2px rgb(0 0 0 / 24%);
   cursor: pointer;
   transition-duration: 1s;
@@ -36,6 +46,11 @@
   text-transform: uppercase;
   border: 2px solid #2563eb;
   background-color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
   box-shadow: 0px 2px 2px rgb(0 0 0 / 24%);
   cursor: pointer;
   transition-duration: 1s;
@@ -46,4 +61,80 @@
 
 .button-icon {
   padding-right: 15px;
+}
+
+.fab {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  min-height: 36px;
+  border-radius: 50%;
+  padding: 0px;
+  min-width: 0px;
+  width: 56px;
+  height: 56px;
+  z-index: 1050;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24), 0px 2px 6px rgba(0, 0, 0, 0.18);
+  background-color: #f59e0b;
+  transition-duration: 1s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.extended {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  min-height: auto;
+  border-radius: 24px;
+  padding: 0px 16px;
+  min-width: 48px;
+  width: auto;
+  height: 48px;
+  z-index: 1050;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24), 0px 2px 6px rgba(0, 0, 0, 0.18);
+  background-color: #f59e0b;
+  transition-duration: 1s;
+  &:hover {
+    opacity: 0.8;
+  }
 }

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 23px;
+  padding: 8px 23px;
 }
 
 .flex {
@@ -10,7 +10,20 @@
 }
 
 .delegate-bp-item-checkbox {
-  margin-right: 23px;
   cursor: pointer;
   width: 18px;
+}
+
+.delegate-bp-item-rank-padding {
+  padding: 0 25.5px;
+}
+
+.delegate-bp-item-proxy-padding {
+  padding: 0 39.5px 0 75px;
+}
+
+.h6 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
 }

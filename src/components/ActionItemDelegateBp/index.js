@@ -7,9 +7,11 @@ const ActionItemDelegateBp = ({ headItem, text, icon, link, target }) => {
       <div className="alignCenter">{headItem}</div>
       <div className="centerItems">
         <span className="body1">{text}</span>
-        <a className="linkPadding" href={link} target={target}>
-          <img src={icon} alt="action item icon" />
-        </a>
+        {icon && (
+          <a className="linkPadding" href={link} target={target}>
+            <img src={icon} alt="action item icon" />
+          </a>
+        )}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import PreviewProfile from "../PreviewProfile";
 import ActionItemDelegateBp from "../ActionItemDelegateBp";
 
-const DelegateBPItem = ({
+const DelegateItem = ({
   text,
   link,
   name,
@@ -12,37 +12,27 @@ const DelegateBPItem = ({
   target,
   bgColor,
   headItem,
-  positionText,
   nameSize,
   linkIcon,
   nameColor,
   avatarIcon,
-  checkboxValue,
+  positionText,
   nameFontWeight,
   selectableItems,
 }) => {
   return (
     <div className="delegate-bp-item-container">
-      <div className="flex">
-        <input
-          className="delegate-bp-item-checkbox"
-          type="checkbox"
-          id="checkbox"
-          name="checkbox"
-          value={checkboxValue}
-        />
-        <PreviewProfile
-          name={name}
-          image={image}
-          bgColor={bgColor}
-          icon={avatarIcon}
-          positionText={positionText}
-          nameSize={nameSize}
-          nameColor={nameColor}
-          nameFontWeight={nameFontWeight}
-          selectableItems={selectableItems}
-        />
-      </div>
+      <PreviewProfile
+        name={name}
+        image={image}
+        bgColor={bgColor}
+        icon={avatarIcon}
+        positionText={positionText}
+        nameSize={nameSize}
+        nameColor={nameColor}
+        nameFontWeight={nameFontWeight}
+        selectableItems={selectableItems}
+      />
       <ActionItemDelegateBp
         text={text}
         link={link}
@@ -54,7 +44,7 @@ const DelegateBPItem = ({
   );
 };
 
-DelegateBPItem.propTypes = {
+DelegateItem.propTypes = {
   text: PropTypes.string,
   link: PropTypes.string,
   name: PropTypes.string,
@@ -63,13 +53,13 @@ DelegateBPItem.propTypes = {
   target: PropTypes.string,
   bgColor: PropTypes.string,
   linkIcon: PropTypes.string,
-  positionText: PropTypes.string,
   nameSize: PropTypes.string,
   nameColor: PropTypes.string,
   avatarIcon: PropTypes.string,
+  positionText: PropTypes.string,
   checkboxValue: PropTypes.string,
   selectableItems: PropTypes.node,
   nameFontWeight: PropTypes.number,
 };
 
-export default DelegateBPItem;
+export default DelegateItem;

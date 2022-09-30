@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import PropTypes from "prop-types";
 
 import PreviewProfile from "../PreviewProfile";
@@ -19,14 +19,29 @@ const BlockProducerItem = ({
   nameFontWeight,
   selectableItems,
 }) => {
+  const ref = useRef(null);
+  const [isSelected, setIsSelected] = useState();
+
+  const handleCheckboxState = () => {
+    setIsSelected(ref?.current?.checked);
+  };
+
   return (
-    <div className="delegate-bp-item-container">
+    <div
+      className={
+        isSelected
+          ? "delegate-bp-item-container delegate-bp-item-seleted"
+          : "delegate-bp-item-container"
+      }
+    >
       <div className="flex">
         <input
+          ref={ref}
           className="delegate-bp-item-checkbox"
           type="checkbox"
           id="checkbox"
           name="checkbox"
+          onChange={handleCheckboxState}
           value={checkboxValue}
         />
         <div className="delegate-bp-item-rank-padding">

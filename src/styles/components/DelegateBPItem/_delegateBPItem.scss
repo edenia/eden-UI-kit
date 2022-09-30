@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 23px;
+  padding: 10px 23px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .flex {
@@ -15,11 +16,17 @@
 }
 
 .delegate-bp-item-rank-padding {
+  align-items: center;
   padding: 0 25.5px;
+  display: flex;
 }
 
 .delegate-bp-item-proxy-padding {
   padding: 0 39.5px 0 75px;
+}
+
+.delegate-bp-item-seleted {
+  background: #f4f8ff;
 }
 
 .h6 {

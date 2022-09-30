@@ -17,7 +17,7 @@ const Fab = ({ onClick, children, extended, bgColor, color }) => {
 Fab.propTypes = {
   extende: PropTypes.bool,
   color: PropTypes.string,
-  onclick: PropTypes.func,
+  onClick: PropTypes.func,
   children: PropTypes.node,
   bgColor: PropTypes.string,
 };

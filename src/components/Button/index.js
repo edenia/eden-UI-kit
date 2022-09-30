@@ -19,7 +19,7 @@ Button.propTypes = {
   text: PropTypes.string,
   icon: PropTypes.string,
   color: PropTypes.string,
-  onclick: PropTypes.func,
+  onClick: PropTypes.func,
   bgColor: PropTypes.string,
   variant: PropTypes.string,
 };

@@ -1,0 +1,37 @@
+.sidebar-logo-container {
+  height: 76px;
+  padding-top: 12px;
+}
+
+.sidebar-container {
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.87);
+  padding-left: 18px;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1 0 auto;
+  z-index: 1200;
+  position: fixed;
+  top: 0px;
+  outline: 0px;
+  left: 0px;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.sidebar-body-head-container {
+  height: calc(100% - 224px);
+}
+
+.sidebar-options-container {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.sidebar-padding-profile {
+  padding-bottom: 48px;
+  padding-right: 18px;
+}

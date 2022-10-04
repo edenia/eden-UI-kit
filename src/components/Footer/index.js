@@ -32,7 +32,7 @@ const Footer = ({
             </div>
           ))}
         </div>
-        <div className="flex">
+        <div className="flex footer-social-media-container">
           {socialMediaItems.map((item) => (
             <a
               key={item?.name}

@@ -1,9 +1,11 @@
 // UI Setting
+@import "./components/base/font";
 @import "./components/base/palette";
 
 // Components
 @import "./components/Card/card";
 @import "./components/Logo/logo";
+@import "./components/Footer/footer";
 @import "./components/Avatar/avatar";
 @import "./components/Button/button";
 @import "./components/SideBar/sideBar";

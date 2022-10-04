@@ -2,25 +2,26 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Footer = ({
-  itemsFooter,
   socialMediaItems,
+  buttomContent,
+  itemsFooter,
   bgColor,
   color,
-  buttomContent,
 }) => {
   return (
-    <div style={{ backgroundColor: bgColor, padding: "32px 16px 24px 60px" }}>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div style={{ display: "flex" }}>
+    <div className="footer-container" style={{ backgroundColor: bgColor }}>
+      <div className="footer-items-container">
+        <div className="flex">
           {itemsFooter.map((item) => (
             <div
               key={item?.title}
-              style={{ display: "grid", paddingRight: "48px", color: color }}
+              style={{ color: color }}
+              className="footer-item-container"
             >
-              <span>{item?.title}</span>
+              <span className="footer-item-title">{item?.title}</span>
               {item?.links?.map((link) => (
                 <a
-                  style={{ color: color }}
+                  style={{ color: color, textDecoration: link?.underline }}
                   href={link?.ref}
                   rel="noreferrer"
                   target={link?.target}
@@ -31,21 +32,21 @@ const Footer = ({
             </div>
           ))}
         </div>
-        <div style={{ display: "flex" }}>
+        <div className="flex">
           {socialMediaItems.map((item) => (
             <a
               key={item?.name}
               href={item?.ref}
               target="_blank"
               rel="noreferrer"
-              style={{ paddingRight: "24px" }}
+              className="footer-paddding-social-media-icons"
             >
               <img src={item?.image} alt={item?.name} width="24px" />
             </a>
           ))}
         </div>
       </div>
-      <div>{buttomContent}</div>
+      <div className="footer-buttom-component">{buttomContent}</div>
     </div>
   );
 };

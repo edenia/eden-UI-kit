@@ -1,0 +1,27 @@
+.footer-container {
+  padding: 32px 16px 24px 60px;
+}
+
+.footer-items-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item-container {
+  display: grid;
+  padding-right: 48px;
+}
+
+.footer-paddding-social-media-icons {
+  padding-right: 24px;
+}
+
+.footer-item-title {
+  padding-bottom: 8px;
+}
+
+.footer-buttom-component {
+  text-align: center;
+  padding-top: 8px;
+  width: 100%;
+}

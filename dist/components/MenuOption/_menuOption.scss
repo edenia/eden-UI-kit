@@ -1,0 +1,27 @@
+.menu-option {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: none;
+  min-width: 168px;
+  padding: 8px 16px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1%;
+  transition-duration: 1s;
+  &:hover {
+    color: #2563eb;
+    background-color: rgba(225, 225, 225, 0.24);
+  }
+}
+
+.selected {
+  color: #2563eb;
+  background-color: rgba(225, 225, 225, 0.24);
+}
+
+.menu-option-icon {
+  padding-right: 35px;
+}

@@ -1,0 +1,19 @@
+.avatar-info-container {
+  display: grid;
+}
+
+.avatar-info-position-text {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.avatar-info-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.avatar-info-center-content {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+}

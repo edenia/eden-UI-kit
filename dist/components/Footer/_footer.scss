@@ -1,0 +1,43 @@
+$breakpoint-mobile: 540px;
+
+.footer-container {
+  width: 100%;
+  padding: 32px 16px 24px 60px;
+  @media (max-width: $breakpoint-mobile) {
+    padding: 24px 16px;
+  }
+}
+
+.footer-items-container {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: $breakpoint-mobile) {
+    display: block;
+  }
+}
+
+.footer-item-container {
+  display: grid;
+  padding-right: 48px;
+}
+
+.footer-paddding-social-media-icons {
+  padding-right: 24px;
+}
+
+.footer-item-title {
+  padding-bottom: 8px;
+}
+
+.footer-buttom-component {
+  padding-top: 8px;
+  width: 100%;
+}
+
+.footer-social-media-container {
+  @media (max-width: $breakpoint-mobile) {
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+}

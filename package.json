@@ -1,7 +1,7 @@
 {
-  "name": "ui-kit",
+  "name": "@edenia/ui-kit",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -14,11 +14,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build",
+    "clean": "rimraf dist",
+    "build": "npm run clean && cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
@@ -60,7 +68,26 @@
     "@storybook/react": "^6.5.12",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "cross-env": "^7.0.3",
     "prop-types": "^15.8.1",
-    "webpack": "^5.74.0"
-  }
+    "webpack": "^5.74.0",
+    "husky": "^7.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "4.0.3"
+  },
+  "description": "<div align=\"center\"> \t<a href=\"https://edenia.com\"> \t\t<img src=\"https://raw.githubusercontent.com/edenia/.github/master/.github/workflows/images/edenia-logo.png\" width=\"300\" alt=\"Edenia Logo\"> \t</a>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edenia/eden-UI-kit.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "source": "src/index.js",
+  "author": "edenia lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edenia/eden-UI-kit/issues"
+  },
+  "homepage": "https://github.com/edenia/eden-UI-kit#readme"
 }

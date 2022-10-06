@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Inter";
-  src: url("/public/assets/Inter-Regular.ttf") format("truetype");
-}
-
 button,
 span,
 h1,
@@ -13,5 +8,5 @@ h5,
 h6,
 a,
 p {
-  font-family: Inter;
+  font-family: sans-serif;
 }

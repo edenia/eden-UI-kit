@@ -19,7 +19,7 @@ export interface IBlockProducerItem {
   nameFontWeight?: number;
 }
 
-const BlockProducerItem: React.FC<IBlockProducerItem> = ({
+export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
   name,
   image,
   bgColor,
@@ -92,5 +92,3 @@ const BlockProducerItem: React.FC<IBlockProducerItem> = ({
     </div>
   );
 };
-
-export default BlockProducerItem;

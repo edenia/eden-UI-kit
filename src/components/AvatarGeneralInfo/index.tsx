@@ -9,7 +9,7 @@ export interface IAvatarGeneralInfo {
   nameFontWeight: number;
 }
 
-const AvatarGeneralInfo: React.FC<IAvatarGeneralInfo> = ({
+export const AvatarGeneralInfo: React.FC<IAvatarGeneralInfo> = ({
   name,
   nameSize,
   positionText,
@@ -42,5 +42,3 @@ const AvatarGeneralInfo: React.FC<IAvatarGeneralInfo> = ({
     </div>
   );
 };
-
-export default AvatarGeneralInfo;

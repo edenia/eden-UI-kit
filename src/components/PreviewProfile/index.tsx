@@ -1,7 +1,7 @@
 import React from "react";
 
-import Avatar from "../Avatar";
-import AvatarGeneralInfo from "../AvatarGeneralInfo";
+import { Avatar } from "../Avatar";
+import { AvatarGeneralInfo } from "../AvatarGeneralInfo";
 
 export interface IPreviewProfile {
   icon: string;

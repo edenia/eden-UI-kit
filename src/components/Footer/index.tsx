@@ -1,11 +1,11 @@
 import React from "react";
 
 export interface IFooter {
-  color: string;
-  bgColor: string;
+  color?: string;
+  bgColor?: string;
   itemsFooter: Array<any>;
-  buttomContent: React.ReactNode;
-  socialMediaItems: Array<any>;
+  buttomContent?: React.ReactNode;
+  socialMediaItems?: Array<any>;
 }
 
 export const Footer: React.FC<IFooter> = ({
@@ -18,7 +18,7 @@ export const Footer: React.FC<IFooter> = ({
   <div className="footer-container" style={{ backgroundColor: bgColor }}>
     <div className="footer-items-container">
       <div className="flex">
-        {itemsFooter.map((item) => (
+        {itemsFooter?.map((item) => (
           <div
             key={item?.title}
             style={{ color: color }}
@@ -38,19 +38,21 @@ export const Footer: React.FC<IFooter> = ({
           </div>
         ))}
       </div>
-      <div className="flex footer-social-media-container">
-        {socialMediaItems.map((item) => (
-          <a
-            key={item?.name}
-            href={item?.ref}
-            target="_blank"
-            rel="noreferrer"
-            className="footer-paddding-social-media-icons"
-          >
-            <img src={item?.image} alt={item?.name} width="24px" />
-          </a>
-        ))}
-      </div>
+      {socialMediaItems && (
+        <div className="flex footer-social-media-container">
+          {socialMediaItems?.map((item) => (
+            <a
+              key={item?.name}
+              href={item?.ref}
+              target="_blank"
+              rel="noreferrer"
+              className="footer-paddding-social-media-icons"
+            >
+              <img src={item?.image} alt={item?.name} width="24px" />
+            </a>
+          ))}
+        </div>
+      )}
     </div>
     <div className="footer-buttom-component">{buttomContent}</div>
   </div>

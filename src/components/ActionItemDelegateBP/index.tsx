@@ -1,9 +1,9 @@
 import React from "react";
 
 export interface IActionItemDelegateBP {
-  headItem: React.ReactNode;
+  headItem?: React.ReactNode;
   target?: string;
-  text: string;
+  text?: string;
   icon?: string;
   link?: string;
 }

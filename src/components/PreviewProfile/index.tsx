@@ -4,15 +4,15 @@ import { Avatar } from "../Avatar";
 import { AvatarGeneralInfo } from "../AvatarGeneralInfo";
 
 export interface IPreviewProfile {
-  icon: string;
-  name: string;
-  image: string;
-  bgColor: string;
-  positionText: string;
-  nameSize: string;
-  nameColor: string;
-  selectableItems: React.ReactNode;
-  nameFontWeight: number;
+  icon?: string;
+  name?: string;
+  image?: string;
+  bgColor?: string;
+  positionText?: string;
+  nameSize?: string;
+  nameColor?: string;
+  selectableItems?: React.ReactNode;
+  nameFontWeight?: number;
 }
 
 export const PreviewProfile: React.FC<IPreviewProfile> = ({

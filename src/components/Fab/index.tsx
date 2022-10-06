@@ -1,10 +1,10 @@
 import React from "react";
 
 export interface IFab extends React.HTMLAttributes<HTMLButtonElement> {
-  extended: Boolean;
-  color: string;
-  children: React.ReactNode;
-  bgColor: string;
+  extended?: Boolean;
+  color?: string;
+  children?: React.ReactNode;
+  bgColor?: string;
 }
 
 export const Fab: React.FC<IFab> = ({

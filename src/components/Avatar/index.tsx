@@ -1,9 +1,9 @@
 import React from "react";
 
 export interface IAvatar {
-  icon: string;
-  image: string;
-  bgColor: string;
+  icon?: string;
+  image?: string;
+  bgColor?: string;
 }
 
 const defaultBackgroundColor = "rgba(0, 0, 0, 0.38)";

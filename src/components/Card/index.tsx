@@ -4,11 +4,11 @@ import { BodyCard } from "../BodyCard";
 import { HeaderFooterCard } from "../HeaderFooterCard";
 
 export interface ICard {
-  height: string;
-  width: string;
-  bobyContent: React.ReactNode;
-  headerContent: React.ReactNode;
-  footerContent: React.ReactNode;
+  height?: string;
+  width?: string;
+  bobyContent?: React.ReactNode;
+  headerContent?: React.ReactNode;
+  footerContent?: React.ReactNode;
 }
 
 export const Card: React.FC<ICard> = ({

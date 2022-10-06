@@ -5,18 +5,18 @@ import { ActionItemDelegateBP } from "../ActionItemDelegateBP";
 
 export interface IBlockProducerItem {
   name: string;
-  image: string;
-  bgColor: string;
-  nameSize: string;
+  image?: string;
+  bgColor?: string;
+  nameSize?: string;
   rankValue: string;
-  nameColor: string;
-  avatarIcon: string;
-  proxyScore: string;
-  eosrateValue: string;
-  positionText: string;
+  nameColor?: string;
+  avatarIcon?: string;
+  proxyScore?: string;
+  eosrateValue?: string;
+  positionText?: string;
   checkboxValue: string;
-  selectableItems: React.ReactNode;
-  nameFontWeight: number;
+  selectableItems?: React.ReactNode;
+  nameFontWeight?: number;
 }
 
 export const BlockProducerItem: React.FC<IBlockProducerItem> = ({

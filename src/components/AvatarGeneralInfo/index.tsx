@@ -1,12 +1,12 @@
 import React from "react";
 
 export interface IAvatarGeneralInfo {
-  name: string;
-  positionText: string;
-  nameSize: string;
-  nameColor: string;
-  selectableItems: React.ReactNode;
-  nameFontWeight: number;
+  name?: string;
+  positionText?: string;
+  nameSize?: string;
+  nameColor?: string;
+  selectableItems?: React.ReactNode;
+  nameFontWeight?: number;
 }
 
 export const AvatarGeneralInfo: React.FC<IAvatarGeneralInfo> = ({

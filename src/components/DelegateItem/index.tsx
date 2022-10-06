@@ -4,21 +4,21 @@ import { PreviewProfile } from "../PreviewProfile";
 import { ActionItemDelegateBP } from "../ActionItemDelegateBP";
 
 export interface IDelegateItem {
-  text: string;
-  link: string;
-  name: string;
-  image: string;
-  headItem: React.ReactNode;
-  target: string;
-  bgColor: string;
-  linkIcon: string;
-  nameSize: string;
-  nameColor: string;
-  avatarIcon: string;
-  positionText: string;
-  checkboxValue: string;
-  selectableItems: React.ReactNode;
-  nameFontWeight: number;
+  text?: string;
+  link?: string;
+  name?: string;
+  image?: string;
+  headItem?: React.ReactNode;
+  target?: string;
+  bgColor?: string;
+  linkIcon?: string;
+  nameSize?: string;
+  nameColor?: string;
+  avatarIcon?: string;
+  positionText?: string;
+  checkboxValue?: string;
+  selectableItems?: React.ReactNode;
+  nameFontWeight?: number;
 }
 
 export const DelegateItem: React.FC<IDelegateItem> = ({

@@ -1,8 +1,8 @@
 import React from "react";
 
 export interface IMenuOption extends React.HTMLAttributes<HTMLButtonElement> {
-  text: string;
-  icon: string;
+  text?: string;
+  icon?: string;
   isSelected: Boolean;
 }
 

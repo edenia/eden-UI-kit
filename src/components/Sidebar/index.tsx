@@ -3,9 +3,9 @@ import React from "react";
 export interface ISidebar {
   open: Boolean;
   close: Function;
-  logo: string;
-  menuOptions: React.ReactNode;
-  profileComponent: React.ReactNode;
+  logo?: string;
+  menuOptions?: React.ReactNode;
+  profileComponent?: React.ReactNode;
 }
 
 export const Sidebar: React.FC<ISidebar> = ({

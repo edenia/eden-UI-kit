@@ -1,13 +1,13 @@
 import React from "react";
 
-export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+export interface IButton extends React.HTMLAttributes<HTMLButtonElement> {
   variant: "primary" | "secondary";
   label?: string;
   shape?: "rounded";
   icon?: string;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<IButton> = ({
   variant,
   label,
   shape,

@@ -8,7 +8,7 @@ export interface IAvatar {
 
 const defaultBackgroundColor = "rgba(0, 0, 0, 0.38)";
 
-const Avatar: React.FC<IAvatar> = ({ icon, image, bgColor }) => (
+export const Avatar: React.FC<IAvatar> = ({ icon, image, bgColor }) => (
   <div
     className="avatar-container"
     style={{ backgroundColor: bgColor || defaultBackgroundColor }}
@@ -17,5 +17,3 @@ const Avatar: React.FC<IAvatar> = ({ icon, image, bgColor }) => (
     {icon && <img src={icon} alt="avatar icon" className="avatar-icon" />}
   </div>
 );
-
-export default Avatar;

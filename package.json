@@ -1,6 +1,6 @@
 {
   "name": "@edenia/ui-kit",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -14,6 +14,7 @@
   "author": "edenia lab",
   "license": "MIT",
   "dependencies": {
+    "clsx": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

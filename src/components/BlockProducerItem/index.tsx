@@ -7,6 +7,7 @@ export interface IBlockProducerItem {
   name: string;
   image?: string;
   bgColor?: string;
+  onClick?(): void;
   nameSize?: string;
   rankValue: string;
   nameColor?: string;
@@ -31,6 +32,7 @@ export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
   eosrateValue,
   positionText,
   checkboxValue,
+  onClick,
   nameFontWeight,
   selectableItems,
 }) => {
@@ -39,6 +41,7 @@ export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
 
   const handleCheckboxState = () => {
     setIsSelected(ref?.current?.checked);
+    onClick
   };
 
   return (

@@ -27,6 +27,7 @@ export const Footer: React.FC<IFooter> = ({
             <span className="footer-item-title">{item?.title}</span>
             {item?.links?.map((link: any) => (
               <a
+                className="footer-item-style"
                 style={{ color: color, textDecoration: link?.underline }}
                 href={link?.ref}
                 rel="noreferrer"

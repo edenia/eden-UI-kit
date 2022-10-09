@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 
 import { PreviewProfile } from "../PreviewProfile";
 import { ActionItemDelegateBP } from "../ActionItemDelegateBP";
@@ -11,6 +11,7 @@ export interface IBlockProducerItem {
   nameSize?: string;
   rankValue: string;
   nameColor?: string;
+  isSelected: boolean;
   avatarIcon?: string;
   proxyScore?: string;
   eosrateValue?: string;
@@ -29,6 +30,7 @@ export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
   rankValue,
   proxyScore,
   avatarIcon,
+  isSelected,
   eosrateValue,
   positionText,
   checkboxValue,
@@ -36,14 +38,6 @@ export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
   nameFontWeight,
   selectableItems,
 }) => {
-  const ref = useRef<HTMLInputElement>(null);
-  const [isSelected, setIsSelected] = useState<Boolean>();
-
-  const handleCheckboxState = () => {
-    setIsSelected(ref?.current?.checked);
-    onClick()
-  };
-
   return (
     <div
       className={
@@ -54,12 +48,12 @@ export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
     >
       <div className="flex">
         <input
-          ref={ref}
+          checked={isSelected}
           className="delegate-bp-item-checkbox"
           type="checkbox"
           id="checkbox"
           name="checkbox"
-          onChange={handleCheckboxState}
+          onChange={() => onClick()}
           value={checkboxValue}
         />
         <div className="delegate-bp-item-rank-padding">

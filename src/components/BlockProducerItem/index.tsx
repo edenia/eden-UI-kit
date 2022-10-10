@@ -57,10 +57,12 @@ export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
           value={checkboxValue}
         />
         <div className="delegate-bp-item-rank-padding">
-          <ActionItemDelegateBP
-            text="Rank"
-            headItem={<span className="h6">{rankValue}</span>}
-          />
+          {rankValue && (
+            <ActionItemDelegateBP
+              text="Rank"
+              headItem={<span className="h6">{rankValue}</span>}
+            />
+          )}
         </div>
         <PreviewProfile
           name={name}
@@ -75,16 +77,20 @@ export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
         />
       </div>
       <div className="centerItems">
-        <ActionItemDelegateBP
-          text="EOSRate"
-          headItem={<span className="h6">{eosrateValue}</span>}
-        />
-        <div className="delegate-bp-item-proxy-padding">
+        {eosrateValue && (
           <ActionItemDelegateBP
-            text="Proxy Score"
-            headItem={<span className="h6">{proxyScore}</span>}
+            text="EOSRate"
+            headItem={<span className="h6">{eosrateValue}</span>}
           />
-        </div>
+        )}
+        {proxyScore && (
+          <div className="delegate-bp-item-proxy-padding">
+            <ActionItemDelegateBP
+              text="Proxy Score"
+              headItem={<span className="h6">{proxyScore}</span>}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

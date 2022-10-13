@@ -30,7 +30,12 @@ export const PreviewProfile: React.FC<IPreviewProfile> = ({
   nameFontWeight,
   selectableItems,
 }) => (
-  <a href={profileLink} rel="noreferrer" target={targetProfile}>
+  <a
+    href={profileLink}
+    rel="noreferrer"
+    target={targetProfile}
+    className="linkStyle"
+  >
     <div className="preview-profile-container">
       <div className="preview-profile-avatar-container">
         <Avatar image={image} icon={icon} bgColor={bgColor} />

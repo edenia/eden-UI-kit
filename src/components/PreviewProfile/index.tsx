@@ -8,11 +8,13 @@ export interface IPreviewProfile {
   name?: string;
   image?: string;
   bgColor?: string;
-  positionText?: string;
   nameSize?: string;
   nameColor?: string;
-  selectableItems?: React.ReactNode;
+  profileLink?: string;
+  targetProfile?: string;
+  positionText?: string;
   nameFontWeight?: number;
+  selectableItems?: React.ReactNode;
 }
 
 export const PreviewProfile: React.FC<IPreviewProfile> = ({
@@ -20,23 +22,27 @@ export const PreviewProfile: React.FC<IPreviewProfile> = ({
   name,
   image,
   bgColor,
-  positionText,
   nameSize,
   nameColor,
+  profileLink,
+  positionText,
+  targetProfile,
   nameFontWeight,
   selectableItems,
 }) => (
-  <div className="preview-profile-container">
-    <div className="preview-profile-avatar-container">
-      <Avatar image={image} icon={icon} bgColor={bgColor} />
+  <a href={profileLink} rel="noreferrer" target={targetProfile}>
+    <div className="preview-profile-container">
+      <div className="preview-profile-avatar-container">
+        <Avatar image={image} icon={icon} bgColor={bgColor} />
+      </div>
+      <AvatarGeneralInfo
+        name={name}
+        positionText={positionText}
+        nameSize={nameSize}
+        nameColor={nameColor}
+        nameFontWeight={nameFontWeight}
+        selectableItems={selectableItems}
+      />
     </div>
-    <AvatarGeneralInfo
-      name={name}
-      positionText={positionText}
-      nameSize={nameSize}
-      nameColor={nameColor}
-      nameFontWeight={nameFontWeight}
-      selectableItems={selectableItems}
-    />
-  </div>
+  </a>
 );

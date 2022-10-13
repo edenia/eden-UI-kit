@@ -8,17 +8,19 @@ export interface IDelegateItem {
   link?: string;
   name?: string;
   image?: string;
-  headItem?: React.ReactNode;
   target?: string;
   bgColor?: string;
   linkIcon?: string;
   nameSize?: string;
   nameColor?: string;
   avatarIcon?: string;
+  profileLink?: string;
+  targetProfile: string;
   positionText?: string;
   checkboxValue?: string;
-  selectableItems?: React.ReactNode;
   nameFontWeight?: number;
+  headItem?: React.ReactNode;
+  selectableItems?: React.ReactNode;
 }
 
 export const DelegateItem: React.FC<IDelegateItem> = ({
@@ -33,7 +35,9 @@ export const DelegateItem: React.FC<IDelegateItem> = ({
   linkIcon,
   nameColor,
   avatarIcon,
+  profileLink,
   positionText,
+  targetProfile,
   nameFontWeight,
   selectableItems,
 }) => (
@@ -44,6 +48,8 @@ export const DelegateItem: React.FC<IDelegateItem> = ({
       bgColor={bgColor}
       icon={avatarIcon}
       positionText={positionText}
+      profileLink={profileLink}
+      targetProfile={targetProfile}
       nameSize={nameSize}
       nameColor={nameColor}
       nameFontWeight={nameFontWeight}

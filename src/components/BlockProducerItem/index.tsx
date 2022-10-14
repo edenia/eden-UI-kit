@@ -8,6 +8,7 @@ export interface IBlockProducerItem {
   image?: string;
   bgColor?: string;
   onClick(): void;
+  imgChild?: React.ReactElement;
   nameSize?: string;
   rankValue: string;
   nameColor?: string;
@@ -30,6 +31,7 @@ export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
   rankValue,
   proxyScore,
   avatarIcon,
+  imgChild,
   isSelected,
   eosrateValue,
   positionText,
@@ -74,6 +76,7 @@ export const BlockProducerItem: React.FC<IBlockProducerItem> = ({
           nameColor={nameColor}
           nameFontWeight={nameFontWeight}
           selectableItems={selectableItems}
+          imgChild={imgChild}
         />
       </div>
       <div className="centerItems">

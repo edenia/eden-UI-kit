@@ -6,6 +6,7 @@ export interface IActionItemDelegateBP {
   text?: string;
   icon?: string;
   link?: string;
+  containerclasses?: string;
 }
 
 export const ActionItemDelegateBP: React.FC<IActionItemDelegateBP> = ({
@@ -14,9 +15,10 @@ export const ActionItemDelegateBP: React.FC<IActionItemDelegateBP> = ({
   icon,
   link,
   target,
+  containerclasses,
 }) => {
   return (
-    <div>
+    <div className={containerclasses}>
       <div className="alignCenter">{headItem}</div>
       <div className="centerItems">
         <span className="body1">{text}</span>

@@ -10,7 +10,6 @@ export default {
 
 const imgUrl =
   "https://ipfs.io/ipfs/QmYTvKtCQhNJvQWXSVWaGsV4Q1nrNJTbmQ8WoJfZC5aaba";
-
 const defaultImg =
   "https://edenia.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Flogos%2Fedenia-isotipo.a4a15009bb5465f508144c4200b470a3.svg&w=640&q=75";
 

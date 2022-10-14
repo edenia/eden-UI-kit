@@ -13,14 +13,15 @@ export interface IDelegateItem {
   linkIcon?: string;
   nameSize?: string;
   nameColor?: string;
-  imgChild?: React.ReactElement;
   avatarIcon?: string;
   profileLink?: string;
   targetProfile: string;
   positionText?: string;
   checkboxValue?: string;
   nameFontWeight?: number;
+  actionItemStyles?: string;
   headItem?: React.ReactNode;
+  imgChild?: React.ReactElement;
   selectableItems?: React.ReactNode;
 }
 
@@ -42,6 +43,7 @@ export const DelegateItem: React.FC<IDelegateItem> = ({
   targetProfile,
   nameFontWeight,
   selectableItems,
+  actionItemStyles,
 }) => (
   <div className="delegate-bp-item-container">
     <PreviewProfile
@@ -64,6 +66,7 @@ export const DelegateItem: React.FC<IDelegateItem> = ({
       icon={linkIcon}
       target={target}
       headItem={headItem}
+      containerclasses={actionItemStyles}
     />
   </div>
 );

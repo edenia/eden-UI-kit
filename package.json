@@ -1,6 +1,6 @@
 {
   "name": "@edenia/ui-kit",
-  "version": "0.3.8",
+  "version": "0.4.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

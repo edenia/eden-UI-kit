@@ -13,6 +13,7 @@ export interface IDelegateItem {
   linkIcon?: string;
   nameSize?: string;
   nameColor?: string;
+  imgChild?: React.ReactElement;
   avatarIcon?: string;
   profileLink?: string;
   targetProfile: string;
@@ -31,6 +32,7 @@ export const DelegateItem: React.FC<IDelegateItem> = ({
   target,
   bgColor,
   headItem,
+  imgChild,
   nameSize,
   linkIcon,
   nameColor,
@@ -47,6 +49,7 @@ export const DelegateItem: React.FC<IDelegateItem> = ({
       image={image}
       bgColor={bgColor}
       icon={avatarIcon}
+      imgChild={imgChild}
       positionText={positionText}
       profileLink={profileLink}
       targetProfile={targetProfile}

@@ -1,6 +1,6 @@
 {
   "name": "@edenia/ui-kit",
-  "version": "0.4.1",
+  "version": "0.4.3",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -16,7 +16,8 @@
   "dependencies": {
     "clsx": "^1.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0"
   },
   "peerDependencies": {
     "react": "^18.2.0",

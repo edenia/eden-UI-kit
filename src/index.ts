@@ -15,3 +15,4 @@ export * from "./components/Logo";
 export * from "./components/MenuOption";
 export * from "./components/PreviewProfile";
 export * from "./components/Sidebar";
+export * from "./components/Spinner";

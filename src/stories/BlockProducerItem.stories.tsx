@@ -11,8 +11,7 @@ export default {
   component: BlockProducerItem,
 };
 
-const imgUrl =
-  "https://ipfs.io/ipfs/QmYTvKtCQhNJvQWXSVWaGsV4Q1nrNJTbmQ8WoJfZC5aaba";
+const imgUrl = "https://eoscostarica.io/img/eoscr-logo-256.png";
 const defaultImg =
   "https://edenia.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Flogos%2Fedenia-isotipo.a4a15009bb5465f508144c4200b470a3.svg&w=640&q=75";
 const selectableItems = [
@@ -30,8 +29,9 @@ const Template: Story<IBlockProducerItem> = (args) => (
 export const BPItem = Template.bind({});
 BPItem.args = {
   onClick: () => {},
+  bgColor: "#fff",
   isSelected: false,
-  name: "Teto Gómez",
+  name: "costaricaeos",
   rankValue: "89",
   proxyScore: "22",
   eosrateValue: "95",
@@ -55,14 +55,15 @@ BPItem.args = {
   selectableItems: (
     <div
       style={{
-        border: "2px solid red",
-        paddingTop: "8px",
         display: "flex",
-        flexDirection: "column",
       }}
     >
       {selectableItems.map((item, index) => (
-        <span>
+        <span
+          style={{
+            fontSize: "12px",
+          }}
+        >
           {index !== 0 && "·"}
           <a rel="noreferrer" href={item.link} target="_blank">
             {item.label}

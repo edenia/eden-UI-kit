@@ -27,7 +27,7 @@ export const Sidebar: React.FC<ISidebar> = ({
       <div className="sidebar-container">
         <div className="sidebar-body-head-container">
           <div className="sidebar-logo-container">
-            <img src={logo} alt="App logo" />
+            <img className="heigth-image" src={logo} alt="App logo" />
           </div>
           <div className="sidebar-options-container">{menuOptions}</div>
         </div>

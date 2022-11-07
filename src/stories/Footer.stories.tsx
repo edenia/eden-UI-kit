@@ -83,7 +83,7 @@ FooterItemDark.args = {
       }}
     >
       <span style={{ display: "flex", color: "rgb(172, 172, 172)" }}>
-        A Community Owned Public Good{" "}
+        A Community Owned Public Good &ensp;
         <a
           target="_blank"
           href="https://edenia.com"
@@ -94,11 +94,11 @@ FooterItemDark.args = {
             color: "rgb(172, 172, 172)",
           }}
         >
-          <div style={{ padding: "0 4px 0 8px", display: "flex" }}>
-            <img src="https://proxy.eden.eoscommunity.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fedenia-isotipo-grey.b3148c10.png&w=32&q=75" />
-          </div>
           Developed by Edenia
         </a>
+        <div style={{ padding: "0 4px 0 8px", display: "flex" }}>
+          <img src="https://proxy.eden.eoscommunity.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fedenia-isotipo-grey.b3148c10.png&w=32&q=75" />
+        </div>
       </span>
     </div>
   ),
@@ -118,7 +118,7 @@ FooterItemLight.args = {
       }}
     >
       <span style={{ display: "flex", color: "rgb(172, 172, 172)" }}>
-        A Community Owned Public Good
+        A Community Owned Public Good &ensp;
         <a
           target="_blank"
           href="https://edenia.com"
@@ -129,11 +129,11 @@ FooterItemLight.args = {
             color: "rgb(172, 172, 172)",
           }}
         >
-          <div style={{ padding: "0 4px 0 8px", display: "flex" }}>
-            <img src="https://proxy.eden.eoscommunity.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fedenia-isotipo-grey.b3148c10.png&w=32&q=75" />
-          </div>
           Developed by Edenia
         </a>
+        <div style={{ padding: "0 4px 0 8px", display: "flex" }}>
+          <img src="https://proxy.eden.eoscommunity.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fedenia-isotipo-grey.b3148c10.png&w=32&q=75" />
+        </div>
       </span>
     </div>
   ),

@@ -69,4 +69,7 @@ SidebarItem.args = {
       }
     />
   ),
+  onClick: () => {
+    console.log('Hola mundo')
+  }
 };

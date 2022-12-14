@@ -6,7 +6,7 @@ export interface ISidebar {
   logo?: string;
   menuOptions?: React.ReactNode;
   profileComponent?: React.ReactNode;
-  onClick?: Function
+  onClick?: Function;
 }
 
 export const Sidebar: React.FC<ISidebar> = ({
@@ -23,7 +23,7 @@ export const Sidebar: React.FC<ISidebar> = ({
     close();
   };
 
-  const handleLogoRender = (event: React.MouseEvent<HTMLDivElement>) => {
+  const handleLogoRender = () => {
     if(onClick) onClick()
   };
 
